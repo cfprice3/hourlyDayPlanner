@@ -80,6 +80,8 @@ function writeToSchedule() {
 
 
 // Click functions for each hour
+
+//----------------9AM-----------------------
 $("#saveBtn9").click(function () {
     var addedText = "#textArea9";
     var savedText = document.getElementById('textArea9').value;
@@ -87,6 +89,7 @@ $("#saveBtn9").click(function () {
     writeToSchedule();
 });
 
+//----------------10AM----------------------
 $("#saveBtn10").click(function () {
     var addedText = "#textArea10";
     var savedText = document.getElementById('textArea10').value;
@@ -94,6 +97,7 @@ $("#saveBtn10").click(function () {
     writeToSchedule();
 });
 
+//----------------11AM----------------------
 $("#saveBtn11").click(function () {
     var addedText = "#textArea11";
     var savedText = document.getElementById('textArea11').value;
@@ -101,6 +105,7 @@ $("#saveBtn11").click(function () {
     writeToSchedule();
 });
 
+//---------------12PM------------------------
 $("#saveBtn12").click(function () {
     var addedText = "#textArea12";
     var savedText = document.getElementById('textArea12').value;
@@ -108,6 +113,7 @@ $("#saveBtn12").click(function () {
     writeToSchedule();
 });
 
+//----------------1PM-------------------------
 $("#saveBtn1").click(function () {
     var addedText = "#textArea1";
     var savedText = document.getElementById('textArea1').value;
@@ -115,6 +121,7 @@ $("#saveBtn1").click(function () {
     writeToSchedule();
 });
 
+//---------------2PM-------------------------
 $("#saveBtn2").click(function () {
     var addedText = "#textarea2";
     var savedText = document.getElementById('textarea2').value;
@@ -122,6 +129,7 @@ $("#saveBtn2").click(function () {
     writeToSchedule();
 });
 
+//---------------3PM-------------------------
 $("#saveBtn3").click(function () {
     var addedText = "#textArea3";
     var savedText = document.getElementById('textArea3').value;
@@ -129,6 +137,7 @@ $("#saveBtn3").click(function () {
     writeToSchedule();
 });
 
+//---------------4PM------------------------
 $("#saveBtn4").click(function () {
     var addedText = "#textArea4";
     var savedText = document.getElementById('textArea4').value;
@@ -136,6 +145,7 @@ $("#saveBtn4").click(function () {
     writeToSchedule();
 });
 
+//---------------5PM------------------------
 $("#saveBtn5").click(function () {
     var addedText = "#textArea5";
     var savedText = document.getElementById('textArea5').value;
