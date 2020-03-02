@@ -152,3 +152,125 @@ $("#saveBtn5").click(function () {
     applySavedText(addedText, savedText);
     writeToSchedule();
 });
+
+// function to check current time and adjust the colors of the background of each hour slot based on
+// if it is before, during, or after the current time.
+checkTime(function () {
+    updateTime();
+}, 1000);
+
+function updateTime() {
+    
+//------------------9AM-------------------------------
+    if (time.isBefore(topOf9)) {
+       $('#text9').css('background', '#77dd77');
+    }
+    else if (time.isBetween(topOf9, bottomOf9)) {
+        $('#text9').css('background', '#ff6961');
+    }
+    else if (time.isAfter(bottomOf9)) {
+        $('#text9').css('background', '#d3d3d3');
+    }
+
+//------------------10AM------------------------------
+    if (time.isBefore(topOf10)) {
+        $('#text10').css('background', '#77dd77');
+    }
+    else if (time.isBetween(topOf10, bottomOf10)) {
+        $('#text10').css('background', '#ff6961');
+    }
+    else if (time.isAfter(bottomOf10)) {
+        $('#text10').css('background', '#d3d3d3');
+    }
+
+//------------------11AM------------------------------
+    if (time.isBefore(topOf11)) {
+        $('#text11').css('background', '#77dd77');
+    }
+    else if (time.isBetween(topOf11, bottomOf11)) {
+        $('#text11').css('background', '#ff6961');
+    }
+    else if (time.isAfter(bottomOf11)) {
+        $('#text11').css('background', '#d3d3d3');
+    }
+
+//------------------12PM------------------------------
+    if (time.isBefore(topOf12)) {
+        $('#text12').css('background', '#77dd77');
+    }
+    else if (time.isBetween(topOf12, bottomOf12)) {
+        $('#text12').css('background', '#ff6961');
+    }
+    else if (time.isAfter(bottomOf12)) {
+        $('#text12').css('background', '#d3d3d3');
+    }
+
+//------------------1PM-------------------------------
+    if (time.isBefore(topOf1)) {
+        $('#text1').css('background', '#77dd77');
+    }
+    else if (time.isBetween(topOf1, bottomOf1)) {
+        $('#text1').css('background', '#ff6961');
+    }
+    else if (time.isAfter(bottomOf1)) {
+        $('#text1').css('background', '#d3d3d3');
+    }
+
+//------------------2PM-------------------------------
+    if (time.isBefore(topOf2)) {
+        $('#text2').css('background', '#77dd77');
+    }
+    else if (time.isBetween(topOf2, bottomOf2)) {
+        $('#text2').css('background', '#ff6961');
+    }
+    else if (time.isAfter(bottomOf2)) {
+        $('#text2').css('background', '#d3d3d3');
+    }
+
+//------------------3PM-------------------------------
+    if (time.isBefore(topOf3)) {
+        $('#text3').css('background', '#77dd77');
+    }
+    else if (time.isBetween(topOf3, bottomOf3)) {
+        $('#text3').css('background', '#ff6961');
+    }
+    else if (time.isAfter(bottomOf3)) {
+        $('#text3').css('background', '#d3d3d3');
+    }
+
+//------------------4PM-------------------------------
+    if (time.isBefore(topOf4)) {
+        $('#text4').css('background', '#77dd77');
+    }
+    else if (time.isBetween(topOf4, bottomOf4)) {
+        $('#text4').css('background', '#ff6961');
+    }
+    else if (time.isAfter(bottomOf4)) {
+        $('#text4').css('background', '#d3d3d3');
+    }
+
+//------------------5PM-------------------------------
+    if (time.isBefore(topOf5)) {
+        $('#text5').css('background', '#77dd77');
+    }
+    else if (time.isBetween(topOf5, bottomOf5)) {
+        $('#text5').css('background', '#ff6961');
+    }
+    else if (time.isAfter(bottomOf5)) {
+        $('#text5').css('background', '#d3d3d3');
+    }
+
+
+    //---------------reset for the schedule end of day------------------
+    if (time.isBetween(reset, topOf9)) {
+        $('#text9').css('background', '#77dd77');
+        $('#text10').css('background', '#77dd77');
+        $('#text10').css('background', '#77dd77');
+        $('#text12').css('background', '#77dd77');
+        $('#text1').css('background', '#77dd77');
+        $('#text2').css('background', '#77dd77');
+        $('#text3').css('background', '#77dd77');
+        $('#text4').css('background', '#77dd77');
+        $('#text5').css('background', ' #77dd77');
+    }
+};
