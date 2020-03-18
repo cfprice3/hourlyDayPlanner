@@ -155,11 +155,11 @@ $("#saveBtn5").click(function () {
 
 // function to check current time and adjust the colors of the background of each hour slot based on
 // if it is before, during, or after the current time.
-checkTime(function () {
-    updateTime();
+setInterval(function () {
+    checkTime();
 }, 1000);
 
-function updateTime() {
+function checkTime() {
     
 //------------------9AM-------------------------------
     if (time.isBefore(topOf9)) {
